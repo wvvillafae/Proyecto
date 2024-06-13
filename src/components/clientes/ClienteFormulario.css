@@ -1,0 +1,79 @@
+/* ClienteFormulario.css */
+
+.cliente-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 100px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;  /* Tamaño máximo reducido */
+  margin: 30px auto;  /* Márgenes ajustados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cliente-formulario:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cliente-formulario input {
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.cliente-formulario input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+.cliente-formulario button {
+  padding: 12px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cliente-formulario button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.cliente-formulario button:active {
+  background-color: #a93226;
+  transform: scale(1);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .cliente-formulario {
+    padding: 15px;
+  }
+
+  .cliente-formulario input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .cliente-formulario button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

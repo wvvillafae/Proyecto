@@ -1,0 +1,100 @@
+:root {
+  --color-placeholder: rgba(255, 255, 255, 0.7);
+  --color-placeholder-focus: rgba(0, 0, 0, 0.7);
+  --color-bg: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-border: rgba(13, 0, 14, 0.5);
+  --color-bg-focus: white;
+  --color-text: black;
+  --color-button: #ebbbf0;
+  --color-button-hover: #be77d6;
+  --color-button-border: #2b1258;
+  --font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+input::placeholder {
+  color: var(--color-placeholder);
+}
+
+input:focus::placeholder {
+  color: var(--color-placeholder-focus);
+}
+
+input:focus {
+  outline: none;
+}
+
+.login-form-container {
+  min-height: 10rem;
+  margin: 10px;
+  max-width: 350px;
+  padding: 20px;
+  background: transparent;
+  box-shadow: 0 0 1rem var(--color-shadow);
+  border-radius: 10px;
+}
+
+.login-form-text {
+  color: var(--color-text);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form-username,
+.login-form-password {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  color: white;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  transition: background 250ms ease-in, color 250ms ease-in;
+  width: calc(100% - 1rem);
+}
+
+.login-form-username:focus,
+.login-form-password:focus {
+  background: var(--color-bg-focus);
+  color: var(--color-text);
+}
+
+.login-form-submit {
+  background-color: var(--color-button) !important;
+  border: 1px solid var(--color-button-border) !important;
+  color: var(--color-text) !important;
+  margin: 1rem auto;
+  padding: 0.8rem;
+  transition: background 250ms ease-in;
+  cursor: pointer;
+  display: block;
+  width: calc(100% - 2rem);
+}
+
+.login-form-submit:hover,
+.login-form-submit:focus {
+  background-color: var(--color-button-hover) !important;
+  color: var(--color-text) !important;
+}
+
+.login-form-error-message {
+  color: var(--color-text);
+  margin-top: 10px;
+  text-align: center;
+}

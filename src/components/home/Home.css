@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+  width: 280px;
+}
+
+.sidebar-header {
+  padding: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e74c3c;
+  font-weight: bold;
+  background-color: #34495e;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-list li:hover {
+  background-color: #e74c3c;
+  color: #ecf0f1;
+}
+
+.menu-list li:hover svg {
+  color: #ecf0f1;
+}
+
+.menu-list li svg {
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.menu-list li:hover::before {
+  left: 0;
+}
+
+.menu-list li span {
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar-header,
+.menu-list li {
+  font-family: 'Arial', sans-serif;
+}
+
+.menu-list li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-list li:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #ecf0f1;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sidebar-footer a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-footer a:hover {
+  color: #ecf0f1;
+}

@@ -1,0 +1,88 @@
+.forms-container {
+    display: flex;
+    margin-right: 800px;
+    justify-content: center; /* Centra horizontalmente las formas */
+    align-items: center; /* Centra verticalmente las formas */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+  }
+
+  .forms {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1rem;
+  }
+  
+
+  .background {
+    background: url('assets/fondo.png'); 
+    height: 650px; /* Ajusta la altura al 100% del viewport */
+    display: flex;
+    margin-left: 0px;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  .background.logged-in {
+    background-image: none; /* Oculta la imagen de fondo cuando el usuario está autenticado */
+  }
+  body{
+    flex: 1; /* Toma la mitad izquierda del contenedor */
+    background-color: rgb(36, 38, 71); /* Color de fondo azul en la mitad izquierda */
+  }
+    .image-text {
+      margin-left: 160px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font-size: 34px;
+  text-align: center;
+  background: linear-gradient(45deg, #0f0f29, #2b1169, #470447); /* Degradado de color */
+  -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+  background-clip: text;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Esto centra verticalmente en la página */
+    }
+    
+    .form-container {
+      width: 300px; /* Ajusta el ancho según sea necesario */
+    }
+    
+    .table-container {
+      width: 80%; /* Ajusta el ancho según sea necesario */
+    }
+    
+    table {
+      margin-left: 400px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    

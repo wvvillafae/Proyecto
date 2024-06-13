@@ -1,0 +1,207 @@
+.proveedores-container {
+  max-width: 1000px;
+  margin-top: 200px;
+  margin-left: 800px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 111%;
+  margin-bottom: 20px;
+}
+.subtitulo {
+  margin-top: -300px;
+  border-radius: 6px;
+  background-color: #6841c2;
+  width: 300%;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #000;
+  text-align: left 10px;
+  position: relative; /* Agregamos posición relativa al subtítulo */
+  z-index: 1; /* Aseguramos que el subtítulo esté por encima del botón */
+}
+.search-bar {
+  position: absolute;
+  z-index: 3;
+  margin-top: -300px;
+  margin-left: 650px;
+  padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.agregar-button {
+  margin-left: 947px;
+  position: absolute; /* Ajustar a posición absoluta */
+  z-index: 3; /* Asegura que el botón esté en frente del fondo del subtítulo */
+  padding: 10px 20px;
+  margin-top: -192px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6841c2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #872da0;
+}
+.agregar-button:hover {
+  background-color: #872da0;
+  box-shadow: 0 0 10px #6841c2;
+}
+
+
+.formulario-proveedor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -200px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 60px;
+right: 840px;
+  width: 300px;
+  z-index: 10;
+}
+
+.formulario-proveedor input[type="text"],
+.formulario-proveedor input[type="email"] {
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.guardar-button,
+.cancelar-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guardar-button {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.guardar-button:hover {
+  background-color: #0069d9;
+}
+
+.cancelar-button {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.cancelar-button:hover {
+  background-color: #c82333;
+}
+
+.tabla-proveedores {
+  width:100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-proveedores thead {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.tabla-proveedores th, .tabla-proveedores td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabla-proveedores tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabla-proveedores tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tabla-proveedores td {
+  color: #555;
+}
+
+.tabla-proveedores th, .tabla-proveedores td {
+  transition: background-color 0.3s ease;
+}
+
+.tabla-proveedores th:first-child, .tabla-proveedores td:first-child {
+  border-left: none;
+}
+
+.tabla-proveedores th:last-child, .tabla-proveedores td:last-child {
+  border-right: none;
+}
+
+.tabla-proveedores th, .tabla-proveedores td {
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-proveedores th:last-child {
+  border-bottom: 2px solid #ddd;
+}
+
+.tabla-proveedores .Table-button {
+  display: flex;
+  gap: 10px;
+}
+
+.tabla-proveedores button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabla-proveedores button:hover {
+  background-color: #e2e2e2;
+}
+
+.tabla-proveedores button:focus {
+  outline: none;
+  box-shadow: 0 0 3px #007bff;
+}
+
+.tabla-proveedores button:first-of-type {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tabla-proveedores button:first-of-type:hover {
+  background-color: #0069d9;
+}
+
+.tabla-proveedores button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.tabla-proveedores button:last-of-type:hover {
+  background-color: #c82333;
+}
